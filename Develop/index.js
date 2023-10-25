@@ -30,7 +30,7 @@ const questions = [
         type:"checkbox",
         name: "license",
         message:"Please select license for the project.",
-        choices: ["None", "Apache License 2.0", "MIT License", "GNU General Public License v3.0"],
+        choices: ["None", "Apache 2.0", "MIT", "GNU General Public v3.0"],
     },
     {
         type:"input",
