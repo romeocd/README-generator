@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
     badge = "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)"
   }
   else if(license === "MIT") {
-    badge = "[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)"
+    badge = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)"
   }
   else if (license === "GPL v3.0") {
   badge = "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)"
@@ -68,7 +68,7 @@ function generateMarkdown(data) {
   ## Description
   ### ${data.description}
 
-  ##Installation
+  ## Installation
   ### ${data.installation}
 
   ## Usage
