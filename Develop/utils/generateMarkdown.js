@@ -22,13 +22,13 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   let licenseLink = '';
     if (license === 'Apache License 2.0') {
-      licenseLink = '(https://opensource.org/licenses/Apache-2.0)'
+      licenseLink = 'https://opensource.org/licenses/Apache-2.0'
     }
     if (license === 'MIT License') {
-      licenseLink = '(https://opensource.org/licenses/MIT)'
+      licenseLink = 'https://opensource.org/licenses/MIT'
     }
     if (license === 'GNU General Public License v3.0') {
-      licenseLink = '(https://www.gnu.org/licenses/gpl-3.0)'
+      licenseLink = 'https://www.gnu.org/licenses/gpl-3.0'
     } else {
       licenseLink = ''
     }
