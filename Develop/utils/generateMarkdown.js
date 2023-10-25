@@ -21,19 +21,19 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseURL = '';
+  let licenseLink = '';
     if (license === "Apache License 2.0") {
-      licenseURL = "(https://opensource.org/licenses/Apache-2.0)"
+      licenseLink = "(https://opensource.org/licenses/Apache-2.0)"
     }
     if (license === "MIT License") {
-      licenseURL = "(https://opensource.org/licenses/MIT)"
+      licenseLink = "(https://opensource.org/licenses/MIT)"
     }
     if (license === "GNU General Public License v3.0") {
-      licenseURL = "(https://www.gnu.org/licenses/gpl-3.0)"
+      licenseLink = "(https://www.gnu.org/licenses/gpl-3.0)"
     } else {
-      licenseURL = ""
+      licenseLink = ""
     }
-    return licenseURL;
+    return licenseLink;
 
 }
 
@@ -53,7 +53,37 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  
+  ##${renderLicenseBadge(data.license)}
+  ###${renderLicenseLink(data.licenseLink)}
+
+  ##Table of Contents
+  *[Description]#Description
+  *[Installation]#Installation
+  *[Usage]#Usage
+  *[Contributing]#Contributing
+  *[Tests]#Tests
+  *[Questions]#Questions
+
+  ##Description
+  ${data.description}
+
+  ##Installation
+  ${data.installation}
+
+  ##Usage
+  ${data.usage}
+
+  ##Contributing
+  ${data.contributing}
+
+  ##Tests
+  ${data.tests}
+
+  ##Questions
+  If you have any questions, contact me at
+
+  GitHub: https://github.com/${data.username}
+  Email: ${data.email}
 `;
 }
 
